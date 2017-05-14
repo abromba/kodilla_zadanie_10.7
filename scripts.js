@@ -121,8 +121,8 @@ function setGamePoints() {
 }
 
 function checkGameWinner() {
-    var winnerIs = player.score === 5 ? player.name : "komputer";
     if ((player.score == 5) || (computer.score == 5)) {
+        var winnerIs = player.score === 5 ? player.name : "komputer";
         alert('Koniec gry. 5 punktów zdobył i tym samym wygrał rundę: ' + winnerIs);
         gameState = 'ended';
         setGameElements();
